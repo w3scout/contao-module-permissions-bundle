@@ -16,7 +16,7 @@
  * Add the "onload_callback" to tl_module
  */
 $GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = array('tl_module_permissions', 'checkPermission');
-$GLOBALS['TL_DCA']['tl_module']['config']['oncreate_callback'][] = array('tl_module_permissions', 'addPermission');
+$GLOBALS['TL_DCA']['tl_module']['config']['onsubmit_callback'][] = array('tl_module_permissions', 'addPermissions');
 
 
 /**
